@@ -1,0 +1,31 @@
+.list-row {
+  li {
+    display: inline;
+    a {
+      margin: 5px 15px;
+      padding: 4px 4px;
+    }
+  }
+}
+
+.list-column {
+  margin: 10px 0px;
+  li {
+    a {
+      margin: 5px 0px;
+      padding: 8px 0px;
+      display: block;
+      color: $secondary-txt;
+      animation: color .5s ease-in-out;
+
+      &.active {
+        border: none;
+        color: $primary;
+      }
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

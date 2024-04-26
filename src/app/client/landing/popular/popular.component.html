@@ -1,0 +1,10 @@
+<section class="popular container pt-15 pb-15 mt-15">
+    <h3>Popular Cources</h3>
+    <h6 class="pt-4 pb-4">Checkout our handly curated cources to get started</h6>
+
+    <div class="cards">
+        @for (p of $popular | async; track $index) {
+        <app-cards [data]="p"></app-cards>
+        }
+    </div>
+</section>

@@ -1,0 +1,15 @@
+.anchor {
+  color: $primary-txt;
+  animation: color 0.5s ease-in-out;
+  &.no-decor {
+    text-decoration: none;
+  }
+  &.active {
+    color: $primary;
+    border-bottom: 2px solid $accent;
+  }
+
+  &.pointer {
+    cursor: pointer;
+  }
+}

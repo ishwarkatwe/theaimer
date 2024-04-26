@@ -1,0 +1,12 @@
+<article class="card fadeIn">
+    <figure>
+        <img [src]="data.image" [alt]="data.name">
+        <figcaption>
+            <h6 class="pt-4 pl-4 pr-4 ellipsis-1" [title]="data.name">{{data.name}}</h6>
+        </figcaption>
+    </figure>
+    <div class="p-4">
+        <p class="ellipsis-2 desc" [title]="data.description">{{data.description}}</p>
+        <button class="btn btn__primary mt-4">Read More</button>
+    </div>
+</article>

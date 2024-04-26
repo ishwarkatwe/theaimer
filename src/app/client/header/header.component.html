@@ -1,0 +1,16 @@
+<header class="header container grid" [ngClass]="isNavbarFixed ? 'header__fixed':''">
+    <figure class="grid align-center">
+        <img src="./../../assets/images/logo_black.png" alt="theAimer" />
+    </figure>
+    <div class="grid align-center justify-center">
+        <ul class="list-row">
+            @for (nav of navItems | async; track $index) {
+            <li><a class="anchor no-decor" [routerLink]="nav.link" routerLinkActive="active" role="button">{{nav.name}}
+                </a></li>
+            }
+        </ul>
+    </div>
+    <div class="grid align-center">
+        <button class="btn btn__primary justify-self-end action">Get Started</button>
+    </div>
+</header>

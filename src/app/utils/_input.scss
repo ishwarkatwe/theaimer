@@ -1,0 +1,39 @@
+.input--group {
+  width: 100%;
+  margin: 1rem 0;
+  > input {
+    height: 40px;
+    width: 80%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    padding: 5px 15px;
+    @include media(phone) {
+      width: 60%;
+    }
+  }
+  > button {
+    width: 20%;
+    border-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    @include media(phone) {
+      width: 35%;
+    }
+  }
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: lighten($light-primary-color, 10%);
+  padding: 5px 15px;
+  @include media(phone) {
+    width: 60%;
+  }
+
+  &:focus {
+    background-color: $white;
+    box-shadow: 1px 1px 1px #ccc;
+  }
+}

@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/utils/reset';
+@import './app/utils/font';
+@import './app/utils/colors';
+@import './app/utils/fadein';
+@import './app/utils/media';
+@import './app/utils/grid';
+@import './app/utils/container';
+@import './app/utils/anchor';
+@import './app/utils/button';
+@import './app/utils/input';
+@import './app/utils/gradient';
+@import './app/utils/headers';
+@import './app/utils/spacing';
+@import './app/utils/list';
+// @import './app/utils/common';
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(200, auto);
+    gap: 15px;
+
+    @include media(phone) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include media(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

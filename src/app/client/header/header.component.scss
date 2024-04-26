@@ -1,0 +1,43 @@
+@import "./../../utils/colors";
+@import "./../../utils/media";
+
+.header {
+  height: 104px;
+  box-shadow: 1px 1px 1px rgb(255 255 255 / 0%);
+  animation: box-shadow height 0.5 ease-in-out;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 32px;
+
+  @include media(phone) {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    padding: 10px;
+  }
+
+  @include media(tablet) {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+
+  &__fixed {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    background: $white;
+    top: 0px;
+    box-shadow: 0px 1px 8px 0px #ccc;
+
+    @include media(phone) {
+      display: none;
+    }
+  }
+
+  > figure > img {
+    height: 40px;
+  }
+
+  .action {
+    width: 130px;
+  }
+}

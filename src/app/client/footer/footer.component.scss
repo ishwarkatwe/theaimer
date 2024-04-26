@@ -1,0 +1,29 @@
+@import "./../../utils/media";
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+
+  @include media(phone) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 10px;
+
+    .brand {
+        margin: 2rem;
+        text-align: center;
+    }
+  }
+
+  .social-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include media(phone) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    gap: 0;
+  }
+}

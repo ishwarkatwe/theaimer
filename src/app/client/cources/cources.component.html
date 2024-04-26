@@ -1,0 +1,17 @@
+<div class="container cources mt-4">
+    <app-categories />
+    <main>
+        <h5>Results</h5>
+        <div class="pt-4 pb-4">
+            <input class="input" [(ngModel)]="searchtxt" (keyup)="search()" placeholder="Search cources" />
+        </div>
+        <div class="cards">
+            @for (p of $items | async; track $index) {
+            <app-cards [data]="p"></app-cards>
+            }
+        </div>
+    </main>
+</div>
+
+
+<!-- <button (click)="add()">Add</button> -->

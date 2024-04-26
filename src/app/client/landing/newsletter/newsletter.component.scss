@@ -1,0 +1,26 @@
+@import "././../../../utils/gradient";
+@import "././../../../utils/colors";
+@import "././../../../utils/media";
+
+.newsletter {
+  @include gradient(left, $gradient-bg);
+  color: $white;
+  min-height: 400px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include media(phone) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  div {
+    > p {
+      color: $white;
+    }
+
+    &:nth-child(2) {
+      justify-self: center;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "./media";
+
+.container {
+  padding: 0px 8rem;
+
+  @include media(phone) {
+    padding: 0px 0.8rem;
+  }
+
+  @include media(tablet) {
+    padding: 0px 2rem;
+  }
+}

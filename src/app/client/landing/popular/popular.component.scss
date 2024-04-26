@@ -1,0 +1,8 @@
+@import "././../../../utils/gradient";
+@import "././../../../utils/colors";
+@import "././../../../utils/media";
+
+.popular {
+  min-height: 30%;
+  @include gradient(left, $popular-bg);
+}

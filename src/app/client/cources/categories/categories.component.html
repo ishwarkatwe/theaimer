@@ -1,0 +1,13 @@
+<aside class="aside mr-4 pt-8 pb-8 pl-4 pr-4">
+    <h5>Categories</h5>
+    <div class="pt-4">
+        <input class="input" placeholder="Search categories" />
+    </div>
+    <ul class="list-column">
+        @for (nav of $categories | async; track $index) {
+        <li>
+            <a class="anchor no-decor pointer" role="button">{{nav['name']}}</a>
+        </li>
+        }
+    </ul>
+</aside>
